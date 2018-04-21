@@ -5,6 +5,25 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
+		System.out.println("첫번째 숫자를 입력해 주세요.");
+		int n1=(new Scanner(System.in)).nextInt();
+		System.out.println("첫번째 숫자를 입력해 주세요.");
+		int n2=(new Scanner(System.in)).nextInt();
+		String s=(new Scanner(System.in)).next();
+		switch(s) {
+		case "+":
+			add(n1,n2);
+			break;
+		case "-":
+			min(n1,n2);
+			break;
+		case "*":
+			mul(n1,n2);
+			break;
+		case "/":
+			div(n1,n2);
+			break;
+		}
 	}
 	void add(int n1,int n2) {
 		System.out.println("결과값은 "+(n1+n2));
